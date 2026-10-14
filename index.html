@@ -1,15 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-
-    <link rel="stylesheet" href="/css/style.css">
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>CODER CODER | Build a school</title>
   </head>
   <body>
-    
+    <!-- header  -->
+    <header class="header">
+      <a href="">
+        <img
+          src="/assets/logo-dark.svg"
+          alt="Skilled Logo"
+          width="111"
+          height="28"
+        />
+      </a>
+      <a href="" class="button dark"> Get Started </a>
+    </header>
+
+    <!-- main  -->
+    <main>
+      <!-- hero section, act as a grid parent -->
+      <section class="hero">
+        <!-- grid 1st child box -->
+        <div class="hero__text">
+          <h1>Maximize skill, minimize budget</h1>
+          <p>
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a href="" class="button pink">Get Started</a>
+        </div>
+        <!-- grid 2nd child box -->
+        <picture>
+          <!-- Desktop screen size = 1200px > In ems 1200px/16 = 75em -->
+          <source media="(min-width: 75em)" srcset="/assets/image-hero-desktop@2x.webp" width="2092" height="1876">
+          <!-- Tablet screen size = 810px > In ems 810px/16 = 50.625em -->
+          <source media="(min-width: 50em)" srcset="/assets/image-hero-tablet@2x.webp" width="695" height="723">
+          <!-- Small screen image and alos acts a call back image if above both fails  -->
+          <img src="/assets/image-hero-mobile@2x.webp" width="870" height="818" alt="A girl enjoying our courses.">
+        </picture>
+      </section>
+
+      <!-- courses section, as a grid parent -->
+      <section class="courses">
+        <!-- grid childrens 1 for title, 5 for courses = 6 child boxes-->
+        <div class="block title">
+          <h2>Check out our most popular courses!</h2>
+        </div>
+        <div class="block course">
+          <img src="/assets/icon-animation.svg" alt="" width="56" height="56">
+          <h3>Animation</h3>
+          <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+          <a href="">Get Started</a>
+        </div>
+        <div class="block course">
+          <img src="/assets/icon-design.svg" alt="" width="56" height="56">
+          <h3>Design</h3>
+          <p>Create beautiful usable interfaces to help shape the future of web looks.</p>
+          <a href="">Get Started</a>
+        </div>
+        <div class="block course">
+          <img src="/assets/icon-photography.svg" alt="" width="56" height="56">
+          <h3>Photography</h3>
+          <p>Explore critical fundamentals like lighting, composition and focus to capture exceptional photos.</p>
+          <a href="">Get Started</a>
+        </div>
+        <div class="block course">
+          <img src="/assets/icon-crypto.svg" alt="" width="56" height="56">
+          <h3>Crypto</h3>
+          <p>All you need to know to get started investing in crypto. Go from beginner to advanced with the 54 hour course.</p>
+          <a href="">Get Started</a>
+        </div>
+        <div class="block course">
+          <img src="/assets/icon-business.svg" alt="" width="56" height="56">
+          <h3>Business</h3>
+          <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+          <a href="">Get Started</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="footer">
+      <a href="">
+        <img
+          src="/assets/logo-light.svg"
+          alt="Skilled Logo"
+          width="111"
+          height="28"
+        />
+      </a>
+      <a href="" class="button purple"> Get Started </a>
+    </footer>
   </body>
 </html>
