@@ -1,2 +1,9 @@
 @import "/css/global/boilerplate.css";
 @import "/css/global/fonts.css";
+@import "/css/global/button.css";
+@import "/css/global/layout.css";
+
+@import "/css/components/header.css";
+@import "/css/components/hero.css";
+@import "/css/components/courses.css";
+@import "/css/components/footer.css";

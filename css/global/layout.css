@@ -1,0 +1,20 @@
+.wrapper{
+    padding-inline: 20px;
+}
+
+/* Mediuum screen: 810px = 50.625em */
+@media (width >= 50.625em){
+    .wrapper{
+        padding-inline: 44px;
+    }
+}
+
+/* Desktop 1200px = 70em */
+@media (width >= 75em){
+    .wrapper{
+        /* whenever the screen hits 1200px the max width of the wapper is 1120px fixed width  */
+        max-width: 70em;  
+        padding-inline: 0;
+        margin-inline: auto;
+    }
+}

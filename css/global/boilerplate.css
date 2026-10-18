@@ -16,15 +16,30 @@
     box-sizing: border-box;
 }
 
+main{
+    overflow-x: clip;
+}
+
 body{
     font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
     font-weight: 500;
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
+p{
+    max-width: 35ch;
+    color: var(--color-grey);
+    line-height: 1.5;
+}
+
 h1, h2, h3{
     font-weight: 800;
     margin: 0;
+    line-height: 1.2;
 }
 
 img{
@@ -32,4 +47,26 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+/* for smaller screen the header logo size should be 79.29 = width, 20 = height */
+
+/* same logo properties used by footer  */
+
+.logo{
+    width: 4.955625rem;
+    transition: opacity 150ms ease-in-out;
+}
+
+
+/* Desktop 1200px = 70em */
+@media (width >= 75em){
+  .logo{
+    width: 6.9375rem;
+  }
+}
+
+.logo:hover{
+    opacity: 0.75;
+}
+
 

@@ -1,0 +1,14 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 16px;
+}
+
+/* medium screen  */
+@media (width >= 50.625em){
+  .header{
+    padding-block: 24px;
+  }
+}
+

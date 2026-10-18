@@ -14,9 +14,10 @@
   </head>
   <body>
     <!-- header  -->
-    <header class="header">
+    <header class="header wrapper">
       <a href="">
         <img
+          class="logo"
           src="/assets/logo-dark.svg"
           alt="Skilled Logo"
           width="111"
@@ -29,7 +30,7 @@
     <!-- main  -->
     <main>
       <!-- hero section, act as a grid parent -->
-      <section class="hero">
+      <section class="hero wrapper">
         <!-- grid 1st child box -->
         <div class="hero__text">
           <h1>Maximize skill, minimize budget</h1>
@@ -44,15 +45,17 @@
           <!-- Desktop screen size = 1200px > In ems 1200px/16 = 75em -->
           <source media="(min-width: 75em)" srcset="/assets/image-hero-desktop@2x.webp" width="2092" height="1876">
           <!-- Tablet screen size = 810px > In ems 810px/16 = 50.625em -->
-          <source media="(min-width: 50em)" srcset="/assets/image-hero-tablet@2x.webp" width="695" height="723">
+          <source media="(min-width: 50.625em)" srcset="/assets/image-hero-tablet@2x.webp" width="695" height="723">
           <!-- Small screen image and alos acts a call back image if above both fails  -->
           <img src="/assets/image-hero-mobile@2x.webp" width="870" height="818" alt="A girl enjoying our courses.">
         </picture>
       </section>
 
-      <!-- courses section, as a grid parent -->
+      <!-- courses section -->
       <section class="courses">
-        <!-- grid childrens 1 for title, 5 for courses = 6 child boxes-->
+        <!-- Wrapper acts as a grid parent -->
+       <div class="wrapper">
+         <!-- grid childrens 1 for title, 5 for courses = 6 child boxes -->
         <div class="block title">
           <h2>Check out our most popular courses!</h2>
         </div>
@@ -86,13 +89,16 @@
           <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
           <a href="">Get Started</a>
         </div>
+       </div>
       </section>
     </main>
 
     <!-- footer  -->
     <footer class="footer">
-      <a href="">
+      <div class="wrapper">
+         <a href="">
         <img
+          class="logo"
           src="/assets/logo-light.svg"
           alt="Skilled Logo"
           width="111"
@@ -100,6 +106,7 @@
         />
       </a>
       <a href="" class="button purple"> Get Started </a>
+      </div>
     </footer>
   </body>
 </html>
